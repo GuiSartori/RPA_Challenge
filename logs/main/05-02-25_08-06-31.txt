@@ -1,0 +1,10 @@
+(02/05/2025 08:06:31 AM) - Início do RPA Challenge
+(02/05/2025 08:06:35 AM) - Navegador inicializado na página do RPA Challenge
+(02/05/2025 08:06:35 AM) - Realizado click no botão START
+(02/05/2025 08:06:36 AM) - Realizado click no botão SUBMIT para os dados da linha 1
+(02/05/2025 08:06:37 AM) - Realizado click no botão SUBMIT para os dados da linha 2
+(02/05/2025 08:06:38 AM) - Realizado click no botão SUBMIT para os dados da linha 3
+(02/05/2025 08:06:39 AM) - Realizado click no botão SUBMIT para os dados da linha 4
+(02/05/2025 08:06:39 AM) - Realizado click no botão SUBMIT para os dados da linha 5
+(02/05/2025 08:06:40 AM) - Ocorreu um erro no round 6 - NoSuchWindowException
+(02/05/2025 08:06:40 AM) - Finalizando automação do RPA Challenge
