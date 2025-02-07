@@ -28,7 +28,7 @@ def main():
         log_append("Início do RPA Challenge")
 
         # Initializes the driver (in this case, Edge)
-        edge_driver = r"C:\Users\guilh\Documents\Compass\Sprint 4\BotCity\Drivers\msedgedriver.exe"
+        edge_driver = r"src\utils\msedgedriver.exe"
         driver = webdriver.Edge(edge_driver)
 
         # Opens the desired page and maximizes the window
