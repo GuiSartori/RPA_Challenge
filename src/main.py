@@ -11,7 +11,7 @@ from utils.custom_log import *
 # Import data functions
 from utils.data_utils import *
 
-# Import xlsx data
+# Import xlsx data | Aqui fiquei em dúvida se colocaria a importação dos dados dentro do try, mas vi indicação de boa prática para fazer a importação junto aos imports das libs
 data_path = r"data\challenge.xlsx"
 df = load_excel(data_path)
 
@@ -28,7 +28,8 @@ def main():
         log_append("Início do RPA Challenge")
 
         # Initializes the driver (in this case, Edge)
-        driver = webdriver.Edge()
+        edge_driver = r"C:\Users\guilh\Documents\Compass\Sprint 4\BotCity\Drivers\msedgedriver.exe"
+        driver = webdriver.Edge(edge_driver)
 
         # Opens the desired page and maximizes the window
         driver.get("https://rpachallenge.com/")
@@ -41,7 +42,7 @@ def main():
         log_append("Realizado click no botão START")
     
     except Exception as e:
-        log_append(f"Ocorreu um erro - {e.__class__.__name__}")
+        log_append(f"Ocorreu um erro - {e}") #.__class__.__name__
 
     # Counter of the rounds (loop) of the RPA Challenge
     round = 1
@@ -90,7 +91,7 @@ def main():
             break
     
     # Condition that verifies if the bot ran successfully for 10 rounds
-    if round == 11:
+    if round == 11: # A fixed number was used because the RPA Challenge has a defined scope of repetition
         log_append("Realização do RPA Challenge concluída com sucesso")
         success_message = driver.find_element(By.XPATH, "//div[@class='message2']").text
         log_append(f'Resultado: {success_message}')

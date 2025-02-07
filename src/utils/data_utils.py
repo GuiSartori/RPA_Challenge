@@ -2,5 +2,6 @@
 import pandas as pd
 
 def load_excel(file_path):
-    """Carrega dados de um arquivo Excel."""
+    
+    # Loads data from an Excel file
     return pd.read_excel(file_path)
